@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "tslint-microsoft-contrib"
+  ],
+  "rules": {
+    "no-relative-imports": false,
+    "newline-before-return": false,
+    "interface-name": [true, "never-prefix"],
+    "no-unsafe-any": false,
+    "no-any": false,
+    "max-classes-per-file": false,
+    "no-import-side-effect": false,
+    "strict-boolean-expressions": false,
+    "no-stateless-class": false,
+    "export-name": false,
+    "no-unnecessary-class": false,
+    "function-name": [true, {
+      "method-regex": "^[a-z][\\w\\d]+$",
+      "private-method-regex": "^[a-z][\\w\\d]+$",
+      "protected-method-regex": "^[a-z][\\w\\d]+$",
+      "static-method-regex": "^[a-z][\\w\\d]+$",
+      "function-regex": "^[a-z][\\w\\d]+$"
+    }]
+  }    
+}

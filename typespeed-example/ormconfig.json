@@ -1,0 +1,21 @@
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "database": "typespeed",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "build/orm/entity/*.js"
+  ],
+  "subscribers": [
+    "build/orm/subscriber/*.js"
+  ],
+  "migrations": [
+    "build/orm/migration/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "build/orm/entity",
+    "migrationsDir": "build/orm/migration",
+    "subscribersDir": "build/orm/subscriber"
+  }
+}

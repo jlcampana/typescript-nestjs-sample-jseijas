@@ -1,0 +1,26 @@
+{
+  "name": "typespeed-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node build/express/index.js",
+    "lint": "tslint -t stylish --project \"tsconfig.json\"",
+    "example-log": "tsc && node build/log/index.js",
+    "example-ioc": "tsc && node build/ioc/index.js",
+    "example-express": "tsc && node build/express/index.js",
+    "loadtomongo": "tsc && node build/orm/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^9.6.6",
+    "linqts": "^1.11.0",
+    "mongodb": "^3.0.7",
+    "reflect-metadata": "^0.1.12",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "typeorm": "^0.2.0",
+    "typespeed": "^1.0.18"
+  }
+}
